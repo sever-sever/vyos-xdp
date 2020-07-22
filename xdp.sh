@@ -14,6 +14,9 @@ sudo rm -f /etc/apt/sources.list.d/mysource.list
 
 export CPATH=/usr/include/x86_64-linux-gnu
 
+# Structure for drop UDP source and destination port 53
+wget https://raw.githubusercontent.com/sever-sever/vyos-xdp/master/files/xdp-drop-ebpf.c
+
 # Compile C to eBPF object
 clang -target bpf -O2 -c xdp-drop-ebpf.c -o xdp-drop-ebpf.o
 
