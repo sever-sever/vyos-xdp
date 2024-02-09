@@ -33,3 +33,9 @@ sudo ip link show dev eth0
 # wget https://raw.githubusercontent.com/Netronome/nfp-drv-kmods/master/tools/stat_watch.py
 # ./stat_watch -c eth0
 
+### Another example
+
+# https://github.com/Nat-Lab/xdp-router
+
+# ip link set eth0 xdp object ./router.o
+# ip link set eth0 xdp off
