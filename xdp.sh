@@ -39,3 +39,5 @@ sudo ip link show dev eth0
 
 # ip link set eth0 xdp object ./router.o
 # ip link set eth0 xdp off
+
+# https://blog.apnic.net/2020/04/30/how-to-build-an-xdp-based-bgp-peering-router/
